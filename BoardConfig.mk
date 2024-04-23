@@ -18,6 +18,7 @@ DEVICE_PATH := device/samsung/m31s
 
 # Inherit from the common tree
 include device/samsung/universal9611-common/BoardConfigCommon.mk
+include device/samsung/universal9611-common/fingerprint/pbfps/BoardConfig.mk
 # Inherit optional vendor BoardConfig
 -include vendor/samsung/m31s/BoardConfigVendor.mk
 

@@ -17,10 +17,13 @@
 DEVICE_PATH := device/samsung/m31s
 
 TARGET_USES_SLSI_NFC := true
+
 # Inherit common device configuration
 $(call inherit-product, device/samsung/universal9611-common/common.mk)
 # Inherit A51 blobs
 $(call inherit-product, vendor/samsung/m31s/m31s-vendor.mk)
+# Fingerprint PBFPS
+$(call inherit-product, device/samsung/universal9611-common/fingerprint/pbfps/config.mk)
 
 DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/overlay
 
