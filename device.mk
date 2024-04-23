@@ -24,6 +24,8 @@ $(call inherit-product, device/samsung/universal9611-common/common.mk)
 $(call inherit-product, vendor/samsung/m31s/m31s-vendor.mk)
 # Fingerprint PBFPS
 $(call inherit-product, device/samsung/universal9611-common/fingerprint/pbfps/config.mk)
+# SLSI NFC
+$(call inherit-product, device/samsung/universal9611-common/nfc/slsi/common.mk)
 
 DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/overlay
 
